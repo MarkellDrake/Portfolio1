@@ -1,5 +1,12 @@
 
+html{
+  background-image: url('./background2.png');
+  background-repeat: no-repeat;
+  background-position:center;
+  background-attachment:fixed;
+  background-size:cover;
 
+}
 body {
     display: flex;
     flex-direction: column;
@@ -12,13 +19,24 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1%;
-    background-color: #7c0707;
+    background-image: url('./space.png');
     color: #fff;
+  }
+  .about{
+    display: flex;
+   gap: 70px;
+  }
+  .skillList{
+    display:flex;
+    column-gap:30px;
   }
 
 section{
     display: flex;
     flex-wrap: wrap;
+}
+.skills{
+    margin: 50px 0;
 }
 
 
@@ -28,7 +46,7 @@ section{
 
   h2 {
     font-size: 160%;
-    color:  #7c0707;
+    color: white;
     padding: 0px 10px 0px;
   }
   
@@ -47,26 +65,47 @@ section{
   }
 
   aside{
+    background-size:100% 100%;
     flex: 1;
-    
-    padding: 15px 20px 100px;
-    
+    color: white;
   }
+  .alignmentTextAside{
+    /* background-image: url('./background2.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    position: relative;
+    text-align: center;
+   }
+   main{
+    background-image: url('./background2.png');
+  background-repeat: no-repeat;
+  background-position:center;
+  background-attachment:fixed;
+  background-size:cover;
+
+   }
   
  div{
-    
+  /* background-image: url('./background2.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:100% 100%; */
     flex: 3;
     padding: 30px;
    
+ }
+ .Mnp{
+  flex-wrap: wrap;
  }
 
  footer ul{
     flex: 3;
     padding: 20px;  
     display: flex;
+    gap: 10px;
     justify-content:space-around;
     min-width: 400px;
-   background-color: #7c0707;
+   
   
  }
  footer a{
@@ -75,9 +114,10 @@ section{
  
  .projects{
     padding: 100px 0px 0px;
+   display: flex-;
  }
  .aboutMe{
-    padding: 10px 0px 500px;
+    padding: 10px 0px 200px;
  }
  .work{
     padding:0px 0px 320px;
@@ -88,7 +128,8 @@ section{
  }
 
  .links{
-    padding: 260px 0px 0px 
+    padding: 50px 0px 0px;
+    
  }
  .projectImage{
   width: 294px;
@@ -101,11 +142,33 @@ section{
  .projectImage:hover{
   border-color:#8ac4ff ;
  }
- 
- .profilePic{
-  width:20px;
-  height: auto;
+ .alignmentText{
+  position: relative;
+  text-align: center;
+ }
+ p{
+  color: white;
+ }
+
+
+ .projectTitle{
+  position: absolute;
+  bottom: 60px;
+  background-color: #7c0707;
+  padding:1px;
+  color: #fff;
 }
+ 
+/* img{
+  max-width: 100%;
+  max-height: 100%;
+} */
+ 
+ 
+ /* .profilePic{
+  width:20px;
+  height:20px;
+} */
 
 @media screen and (max-width: 768px) {
   header, main {
